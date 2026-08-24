@@ -1,0 +1,14 @@
+/* style.css */
+
+p {
+    font-size: 16px;
+}
+
+.bio {
+    color: #bf00ff;
+    line-height: 1.5;
+}
+
+#nama {
+    color: rgb(204, 0, 255);
+}
