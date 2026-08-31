@@ -1,0 +1,17 @@
+/* style.css */
+body{
+    background-color:black
+}
+h1 {
+    color: aqua;
+    border: 3px solid rgb(255, 0, 0); /* border 3px garis lurus warna aqua */
+    padding: 10px; /* kasih jarak biar teks ga mepet border */
+    text-align: center;
+}
+
+p{
+    color: #008000;
+    border: 2px dashed #80006d; /* border 2px garis putus-putus warna hijau */
+    padding: 15px; /* jarak isi dengan border */
+    border-radius: 10px; /* sudut border jadi agak bulat */
+}
