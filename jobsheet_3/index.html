@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUCATI INDONESIA - Official Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">DUCATI <span>STORE</span></div>
+<nav><a href="#motor">Motor</a><a href="#apparel">Apparel</a><a href="#kontak">Kontak</a></nav>
+<div class="cart">🛒 <span id="cart-count">0</span></div>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<div class="badge">NEW 2026 - ITALIAN PERFORMANCE</div>
+<h1>PANIGALE V4<br>BUILT FOR<br><span>THE NEXT RIDE.</span></h1>
+<p>Motor superbike tercepat Ducati dengan 215 HP. Cicilan mulai Rp15jt/bulan. Garansi resmi 2 tahun.</p>
+<div class="hero-btn">
+<button class="btn-red" onclick="beli('Panigale V4')">Beli Sekarang</button>
+<button class="btn-outline">Lihat Spesifikasi</button>
+</div>
+<div class="hero-specs"><span>0-100 km/h 2.8s</span><span>Top Speed 300km/h</span><span>215 HP</span></div>
+</div>
+<div class="hero-image">
+<img src="ducati.jpg" alt="Ducati Panigale V4">
+<div class="price-tag"><b>Rp 530 Juta</b><p>Mulai dari - Ready Stock</p></div>
+</div>
+</section>
+
+<section id="motor" class="products">
+<div class="section-head">
+<h2>PILIHAN MOTOR & HARGA TERBARU 2026</h2>
+<p>Harga OTR Jakarta, bisa kredit & trade-in</p>
+</div>
+
+<div class="filter">
+<button class="active" onclick="filterMotor('all')">Semua</button>
+<button onclick="filterMotor('naked')">Naked</button>
+<button onclick="filterMotor('superbike')">Superbike</button>
+<button onclick="filterMotor('cruiser')">Cruiser</button>
+</div>
+
+<div class="grid">
+<!-- MONSTER -->
+<div class="card" data-cat="naked">
+<img src="ducati monster.jpg" alt="Monster">
+<div class="card-body">
+<div class="card-top"><b>Monster</b><span class="stock">Ready</span></div>
+<p>Naked bike paling ikonik, ringan & lincah untuk harian.</p>
+<ul><li>937cc Testastretta</li><li>111 HP - 95 Nm</li><li>Berat 188kg</li></ul>
+<div class="price">Rp 359 – 440 Juta</div>
+<button onclick="beli('Monster')">Beli - DP 20%</button>
+</div>
+</div>
+
+<!-- PANIGALE -->
+<div class="card" data-cat="superbike">
+<img src="ducati.jpg" alt="Panigale">
+<div class="card-body">
+<div class="card-top"><b>Panigale V4</b><span class="stock hot">Best Seller</span></div>
+<p>Superbike juara WorldSBK, teknologi MotoGP.</p>
+<ul><li>1103cc Desmosedici Stradale</li><li>215 HP - 124 Nm</li><li>Winglet Aerodinamis</li></ul>
+<div class="price">Rp 530 Jt – 1,9 Miliar</div>
+<button onclick="beli('Panigale V4')">Beli - Cicilan 0%</button>
+</div>
+</div>
+
+<!-- DIAVEL -->
+<div class="card" data-cat="cruiser">
+<img src="diavel.jpg" alt="Diavel">
+<div class="card-body">
+<div class="card-top"><b>Diavel 1260</b><span class="stock">Ready</span></div>
+<p>Cruiser power dengan gaya muscle & nyaman jarak jauh.</p>
+<ul><li>1262cc Testastretta DVT</li><li>159 HP - 129 Nm</li><li>240 Rear Tyre</li></ul>
+<div class="price">Rp 535 – 610 Juta</div>
+<button onclick="beli('Diavel')">Beli - Test Ride</button>
+</div>
+</div>
+
+<!-- XDIAVEL -->
+<div class="card" data-cat="cruiser">
+<img src="xdiavel.jpg" alt="XDiavel">
+<div class="card-body">
+<div class="card-top"><b>XDiavel S</b><span class="stock">Indent 2 Bulan</span></div>
+<p>Cruiser paling mewah, full fitur & belt drive.</p>
+<ul><li>1262cc - 152 HP</li><li>Cruise Control & Cornering ABS</li></ul>
+<div class="price">Rp 878 – 988 Juta</div>
+<button onclick="beli('XDiavel')">Pesan Sekarang</button>
+</div>
+</div>
+
+<!-- MULTISTRADA -->
+<div class="card" data-cat="naked">
+<img src="multitrada.jpg" alt="Multistrada">
+<div class="card-body">
+<div class="card-top"><b>Multistrada V4</b><span class="stock">Ready</span></div>
+<p>Adventure touring 4 benua, radar & adaptive cruise.</p>
+<ul><li>1158cc V4 Granturismo</li><li>170 HP - Radar System</li></ul>
+<div class="price">Mulai Rp 379 Juta</div>
+<button onclick="beli('Multistrada')">Beli - Free Box</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="trust">
+<div class="trust-box"><img src="sirkuit.jpg"><div><b>Italia. Balap. Presisi.</b><p>Showroom premium dengan 1 motor 1 panggung, lighting khusus biar detail motor keliatan.</p></div></div>
+<div class="trust-box"><img src="comunitas.jpg"><div><b>Dari Rasa Penasaran Menjadi Loyalitas</b><p>Free komunitas Ducati, servis resmi, garansi 2 tahun, trade-in semua merk.</p></div></div>
+</section>
+
+<section id="kontak" class="contact">
+<h2>MAU TEST RIDE? HUBUNGI KAMI</h2>
+<div class="contact-grid">
+<div class="form">
+<input type="text" placeholder="Nama Lengkap" id="nama">
+<input type="text" placeholder="No WA" id="wa">
+<select id="motorPilih"><option>Monster</option><option>Panigale V4</option><option>Diavel</option><option>XDiavel</option><option>Multistrada</option></select>
+<button class="btn-red full" onclick="kirimWA()">Kirim ke WhatsApp Sales</button>
+</div>
+<div class="info">
+<p><b>DUCATI STORE INDONESIA</b><br>Jl. Ducati No. 1, Jakarta<br>Senin-Sabtu 09.00-18.00</p>
+<p>📞 0812-3456-7890<br>💬 WA Fast Response</p>
+<div class="apparel-mini">
+<div><b>Ducati Corse Cap</b><span>Rp192.500</span></div>
+<div><b>Corse Jacket</b><span>Rp595.000</span></div>
+<div><b>T-shirt</b><span>Rp660.000</span></div>
+<div><b>Helm Ducati</b><span>Rp6-19 Jt</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>© 2026 DUCATI STORE & SHOP - BUILT FOR THE NEXT RIDE.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
